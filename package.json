@@ -1,0 +1,30 @@
+{
+  "name": "xzlpkg",
+  "version": "0.0.4",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-stylus-compiler": "^1.0.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.4",
+    "@vue/compiler-sfc": "^3.1.4",
+    "stylus": "^0.54.8",
+    "vite": "^2.3.8"
+  },
+  "main": "./dist/xzlpkg.umd.js",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/xzlpkg.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/xzlpkg.es.js",
+      "require": "./dist/xzlpkg.umd.js"
+    }
+  }
+}
